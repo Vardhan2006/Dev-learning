@@ -96,3 +96,19 @@ let dj = [1,2,3,4,5];
 let va = dj.find(function(val){
     return val ===1;
 })
+
+
+
+// Some
+
+let som = [10,20,30,40,50,60];
+let any = som.some(function(val){   // can use if we want to find if its there or not it shows either true or false
+    return val > 90;
+});
+
+
+// Every (check if everyone passes the condtion or not and shows using true or not)
+let eve = [10,20,30,40,50,60];
+let ev = eve.every(function(val){
+    return val > 15;
+});
