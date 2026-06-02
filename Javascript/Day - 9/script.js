@@ -17,7 +17,7 @@ marks.unshift(30); // adds num at start
 marks.splice(2, 1); // remove any number from arr (index, how many values to remove)
 let newmarks = marks.slice(0, 2); // removes numbers from 0 to 2 means it will remove 0 and 1
 
-// splice changes the array but splice wont instead it returns a new copy which we can take in a new variable.
+// splice changes the array but slice wont instead it returns a new copy which we can take in a new variable.
 
 marks.reverse(); // reverses it
 
@@ -26,7 +26,6 @@ let sr = marks.sort(function(a,b) { // sort accepts a function to sort in ascend
 });
 
 //console.log(marks);
-
 
 
 
@@ -74,7 +73,6 @@ let newn = n.filter(function(val){
 })
 
 // console.log(newn); // it will give [4,5]
-
 
 
 
