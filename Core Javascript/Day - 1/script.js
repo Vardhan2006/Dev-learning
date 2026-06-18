@@ -1,10 +1,12 @@
 // words and Key words
 //keyword is a special word which has a defined meaning
 
+// Variables are containers which hold data, they help us store, reuse, update information.
+
 // var, let, const
 
-// Var we can avoid because its old now
-// we use Let when we need to change like value often cricket score
+// Var we can avoid because its old and risky now
+// we use Let when we need to change value often like cricket score
 // we use const when we dont have to change value like pi 3.14
 
 
@@ -58,14 +60,19 @@ var a = 2;
 
 // Temporal Dead Zone (space above the let and const)
 
-console.log(a);
+{
+
+ // Temporal Dead Zone Starts Here   
+console.log(d);
 // Temporal Dead Zone
 // Temporal Dead Zone
 // Temporal Dead Zone
 // Temporal Dead Zone
 // Temporal Dead Zone
 // Temporal Dead Zone
-let d = 12;
+let d = 12; // Temporal Dead Zone Ends Here
+
+}
 
 
 
@@ -125,5 +132,3 @@ let a = 10;
 }
 
 console.log("out", a)
-
-
