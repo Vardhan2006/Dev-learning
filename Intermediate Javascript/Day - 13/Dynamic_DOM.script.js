@@ -2,7 +2,7 @@
 
 
 // Step 1 create variable like h1 and createElement(h1)
-// step 2 add h1 into the html using textContent = "somw thing" 
+// step 2 add h1 into the html using textContent = "some thing" 
 // step 3 use document.body.prepend(h1) or append(h1)
 
 // Create Element
