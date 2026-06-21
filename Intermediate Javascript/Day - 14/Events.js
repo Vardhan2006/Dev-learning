@@ -37,5 +37,14 @@ name.addEventListener("input", function (details) {
 });
 
 
+// change event works when there is any change in input select or textarea
+
+let sel = document.querySelector("select");
+let select = document.querySelector("#selection");
+
+sel.addEventListener("change", function(details){
+    console.log(details.target.value);
+    select.textContent = "Device Selected";
+});
 
 
