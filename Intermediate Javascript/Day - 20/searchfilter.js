@@ -5,7 +5,7 @@ const users = [
         bio: "silent chaos in a loud world 🌑🖤 | not for everyone",
     },
     {
-        name: "kiara mehta",
+        name: "amira mehta",
         pic: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500",
         bio: "main character energy 🎬 | coffee > everything ☕✨",
     },
@@ -74,3 +74,14 @@ function showUsers(arr) {
 }
 
 showUsers(users);
+
+let inp = document.querySelector(".inp");
+inp.addEventListener("input", function(){
+    console.log(inp.value);
+    let newUsers = users.filter((user) => {
+        return user.name.startsWith(inp.value);
+    });
+
+    showUsers(newUsers);
+});
+
