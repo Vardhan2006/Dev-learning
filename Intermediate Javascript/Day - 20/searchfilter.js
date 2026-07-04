@@ -84,4 +84,3 @@ inp.addEventListener("input", function(){
 
     showUsers(newUsers);
 });
-
