@@ -127,3 +127,5 @@ let fnc = nam.bind(object, 1,2,3); // it will not come in console
 }
 
 */
+
+
