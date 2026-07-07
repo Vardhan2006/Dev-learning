@@ -83,7 +83,47 @@ output: name {name: 'vardhan'}
 
 /*arrow func will take value from the parent so if "this" value of 
 parent is window the arrows value will be window, if the parent func id arrow function it will
-take value from global which will window.
+take value from global which will window. so thats why it matters where we are writing the arrow function 
+thats what is called lexical this (physical this) means taking the value from surreoundings
+rather than its own this.
 */
 
 
+// Manual Binding: call, Bind, apply
+
+// when we are calling a function we can set the values of its "this"
+
+// example
+
+let object = {
+    name: "Vardhan",
+    age: 26,
+};
+
+function nam(a,b,c) {
+    console.log(this, a, b, c); // currently its window, we want to change the this to be obj instead of window
+};
+
+// thats how we change
+
+nam.call(object, 1, 2, 3); // {name: 'Vardhan'} we converted the window to obj using call
+
+
+// if we are send more than 1 paramenters and we use "apply" than apply says we will only send 2 parameters one is object and other is array
+
+nam.apply(object, [1,2,3]);
+
+
+// bind its same like call but there is a small difference
+
+let fnc = nam.bind(object, 1,2,3); // it will not come in console 
+
+// like call and apply calls the func but bind makes a copy 
+
+/*
+
+ƒ nam(a,b,c) {
+    console.log(this, a, b, c); // currently its window, we want to change the this to be obj instead of window
+}
+
+*/
