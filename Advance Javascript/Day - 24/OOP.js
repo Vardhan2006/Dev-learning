@@ -132,3 +132,47 @@ User {name: 'Danger', address: 'CND', role: 'Don'}
 */
 
 
+// Difference prototypal inheritance vs classical inheritance
+
+// the above example is classical inheritance means inheriting some thing from parent
+
+// portotypal inheritance happens only in JS
+
+/*
+
+basically inheritance means parent class --> child class 
+
+but in JS there was not classes it use to inherit from object --> object
+
+if we want we can we can inherit all the propers and methods from object A to object B
+
+*/
+
+// example
+
+let coffee = {
+    color: "dark",
+    drink: function(){
+        console.log("gut gut gut");   
+    },
+};
+
+let newcoffee = Object.create(coffee);
+console.log(newcoffee);
+newcoffee.drink();
+
+/* basically it inherited the the color from object to another object for this we use capital O in object
+
+[[Prototype]]
+: 
+Object
+color
+: 
+"dark"
+drink
+: 
+ƒ ()
+
+*/
+
+
