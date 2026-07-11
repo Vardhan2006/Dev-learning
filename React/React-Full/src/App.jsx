@@ -1,13 +1,19 @@
-import Props from "./Day - 1/Props";
+import Props_Project from "./Day - 2/Props_Project";
 
 function App() {
+  
   return (
     <div className="parent">
-      <Props user="BOB" />
+
+      <Props_Project/>
+      <Props_Project/>
+
+      {/* <Props user="BOB" />
       <Props user="ROB" />
       <Props user="HOB" />
-      <Props user="HOP" />
+      <Props user="HOP" /> */}
     </div>
+    
 
   )
 }

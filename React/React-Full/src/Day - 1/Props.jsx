@@ -1,8 +1,6 @@
 import React from 'react'
 
 function Props(props) {
-    console.log(props);
-    
     return (
         <>
             
