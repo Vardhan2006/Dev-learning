@@ -1,7 +1,10 @@
-import Props_Project from "./Day - 2/Props_Project";
+import Functions from "./Day - 3/Functions";
+
+// import Props_Project from "./Day - 2/Props_Project";
 
 function App() {
 
+  /*
   const jobs = [
     {
       id: 1,
@@ -71,17 +74,24 @@ function App() {
       location: "San Jose, USA"
     },
     
-  ];
+  ];*/
 
 
   return (
     <div className="parent">
 
-      <div className="parent">
+
+    <Functions/>
+
+
+
+      {/* <div className="parent">
         {jobs.map((job) => (
           <Props_Project key={job.id} job={job} />
         ))}
-      </div>
+      </div> */}
+
+
 
       {/* <Props user="BOB" />
       <Props user="ROB" />

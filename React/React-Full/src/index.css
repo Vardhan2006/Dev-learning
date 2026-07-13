@@ -11,6 +11,43 @@ body {
   width: 100%;
 }
 
+.parent {
+  height: 100vh;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #dadada;
+}
+
+button {
+    border: red 1px solid;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input {
+  padding: 5px;
+  margin: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .parent {
   padding: 20px;
   display: flex;
@@ -39,7 +76,7 @@ body {
 
 /* Props Project CSS*/
 
-
+/* 
 .parent {
   height: 100vh;
   background-color: #111;
@@ -143,4 +180,4 @@ body {
 
 .bottom p {
   font-size: 11px;
-}
+} */
