@@ -1,4 +1,6 @@
-import Functions from "./Day - 3/Functions";
+import Usestate from "./Day - 3/Usestate";
+
+//import Functions from "./Day - 3/Functions";
 
 // import Props_Project from "./Day - 2/Props_Project";
 
@@ -80,8 +82,9 @@ function App() {
   return (
     <div className="parent">
 
+    <Usestate/>  
 
-    <Functions/>
+    {/* <Functions/> */}
 
 
 
