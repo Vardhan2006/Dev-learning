@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,9 +27,7 @@ input, button{
   margin: 10px;
   font-size: 15px;
   display: block;
-}
-
-
+} */
 
 /* button {
     border: red 1px solid;
@@ -65,16 +63,6 @@ h1 {
 
 } */
 
-
-
-
-
-
-
-
-
-
-
 /* .parent {
   padding: 20px;
   display: flex;
@@ -99,11 +87,11 @@ h1 {
   border: 1px solid white;
 } */
 
-
-
 /* Props Project CSS*/
 
 /* 
+
+
 .parent {
   height: 100vh;
   background-color: #111;
@@ -208,3 +196,7 @@ h1 {
 .bottom p {
   font-size: 11px;
 } */
+
+
+
+@import "tailwindcss";

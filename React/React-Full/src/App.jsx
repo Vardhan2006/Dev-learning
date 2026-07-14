@@ -1,4 +1,5 @@
 import Forms from "./Day - 4/forms";
+import Notesapp from "./Day - 4/NotesApp";
 
 // import UseEffect from "./Day - 3/useEffect";
 
@@ -86,10 +87,9 @@ function App() {
   return (
     <div className="parent">
 
-
-      <Forms/>
-
-
+    <Notesapp/>
+    
+    {/* <Forms/> */}
 
     {/* <UseEffect/> */}
 
