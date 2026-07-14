@@ -1,4 +1,6 @@
-import UseEffect from "./Day - 3/useEffect";
+import Forms from "./Day - 4/forms";
+
+// import UseEffect from "./Day - 3/useEffect";
 
 // import Usestate from "./Day - 3/Usestate";
 
@@ -85,10 +87,11 @@ function App() {
     <div className="parent">
 
 
-    <UseEffect/>
+      <Forms/>
 
 
 
+    {/* <UseEffect/> */}
 
     {/* <Usestate/>   */}
 
