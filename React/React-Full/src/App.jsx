@@ -1,5 +1,8 @@
-import Forms from "./Day - 4/forms";
-import Notesapp from "./Day - 4/NotesApp";
+import Api_calls from "./Day - 5/Api_calls";
+
+// import Forms from "./Day - 4/forms";
+
+// import Notesapp from "./Day - 4/NotesApp";
 
 // import UseEffect from "./Day - 3/useEffect";
 
@@ -87,7 +90,10 @@ function App() {
   return (
     <div className="parent">
 
-    <Notesapp/>
+    <Api_calls/>
+
+    
+    {/* <Notesapp/> */}
     
     {/* <Forms/> */}
 
