@@ -1,4 +1,6 @@
-import UseEffect from "./Day - 5/UseEffect";
+import Router_DOM_Basics from "./Day - 5/Router_DOM_Basics";
+
+// import UseEffect from "./Day - 5/UseEffect";
 
 // import Api_calls from "./Day - 5/Api_calls";
 
@@ -92,7 +94,9 @@ function App() {
   return (
     <div className="parent">
 
-    <UseEffect/>
+    <Router_DOM_Basics/>
+
+    {/* <UseEffect/> */}
 
     {/* <Api_calls/> */}
  
