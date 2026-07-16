@@ -30,13 +30,13 @@ h1{
     justify-content: space-between;
     padding: 20px 40px;
     background-color: rgb(10, 117, 146);
+
 }
 
 .nav div{
     display: flex;
     align-items: center;
     gap: 40px;
-    background-color: rgb(255, 255, 255);
 }
 
 /* button {
