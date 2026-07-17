@@ -1,4 +1,11 @@
-import Router_DOM_Basics from "./Day - 5/Router_DOM_Basics";
+import Button from './Day - 6/Button'
+import Navbar from './Day - 6/Navbar'
+
+// import Navbar from "./Day - 6/Navbar";
+import React from "react";
+import { useState } from "react";
+
+// import Router_DOM_Basics from "./Day - 5/Router_DOM_Basics";
 
 // import UseEffect from "./Day - 5/UseEffect";
 
@@ -90,25 +97,29 @@ function App() {
     
   ];*/
 
+  const [theme, setTheme] = useState("light")
 
   return (
     <div className="parent">
 
-    <Router_DOM_Basics/>
+      <Navbar />
+      <Button />
 
-    {/* <UseEffect/> */}
+      {/* <Router_DOM_Basics/> */}
 
-    {/* <Api_calls/> */}
- 
-    {/* <Notesapp/> */}
-    
-    {/* <Forms/> */}
+      {/* <UseEffect/> */}
 
-    {/* <UseEffect/> */}
+      {/* <Api_calls/> */}
 
-    {/* <Usestate/>   */}
+      {/* <Notesapp/> */}
 
-    {/* <Functions/> */}
+      {/* <Forms/> */}
+
+      {/* <UseEffect/> */}
+
+      {/* <Usestate/>   */}
+
+      {/* <Functions/> */}
 
 
 
