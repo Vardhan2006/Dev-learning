@@ -1,4 +1,3 @@
-
 ## Node JS Introduction
 
 - node js is javascript runtime environment (runtime is a environment where we run some code)
@@ -19,7 +18,7 @@ Node.js = V8 + Node APIs + Event Loop + libuv + other internal components.
 - Defines project configuration (such as module type)
 - if a new developer joins the team he can see the package.json and gets the most of the knowledge about the project
 
-## What is dependencies and Dev Dependencies 
+## What is dependencies and Dev Dependencies  
 
 - Dependencies are runtime packages that the application needs while it is running in production. Dev dependencies are packages used during development, testing, linting, transpiling, or building the application, and are generally not needed in production.
 
