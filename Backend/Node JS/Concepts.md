@@ -2,8 +2,7 @@
 
 - node js is javascript runtime environment (runtime is a environment where we run some code)
 - In node javascript runs outside the browser (ex: running on our computer or a server)
-- node js uses googles V8 engine The V8 engine. This compiles JavaScript into machine code and executes it.
-
+- node js uses googles V8 engine. The V8 engine compiles JavaScript into machine code and executes it.
 - npm is node package manager this will help us install various packages, run project scripts, help using dependencies using package.json
 
 V8 only executes JavaScript.
