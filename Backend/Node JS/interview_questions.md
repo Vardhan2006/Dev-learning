@@ -18,6 +18,8 @@ package.json stores project metadata, dependencies, scripts, and configuration s
 
 
 
+
+
 # Interview Questions - Process Object
 
 ## 1. What is the `process` object in Node.js?
@@ -119,3 +121,161 @@ process.env is a Node.js object that gives us access to those environment variab
 
 .env file -----> dotenv.config() -----> process.env -----> Your Node.js application
 
+
+
+
+
+# Interview Questions - Callbacks, Promises & Async/Await
+
+## 1. What is a callback?
+
+A callback is a function passed as an argument to another function.
+
+It is usually called after an asynchronous operation is completed.
+
+Example:
+
+```ts
+findUserWithCallback(1, (error, user) => {
+    if (error) {
+        console.log(error.message);
+        return;
+    }
+
+    console.log(user);
+});
+```
+
+---
+
+## 2. What is the Node.js callback pattern?
+
+The classic Node.js callback pattern is:
+
+```ts
+callback(error, result)
+```
+
+- If something goes wrong:
+
+```ts
+callback(new Error("User not found"));
+```
+
+- If everything is successful:
+
+```ts
+callback(null, user);
+```
+
+This pattern was widely used in older Node.js applications.
+
+---
+
+## 3. What is a Promise?
+
+A Promise is an object that represents the result of an asynchronous operation.
+
+A Promise has three states:
+
+- Pending
+- Fulfilled (Resolved)
+- Rejected
+
+Example:
+
+```ts
+findUserWithPromise(1)
+    .then((user) => {
+        console.log(user);
+    })
+    .catch((error) => {
+        console.log(error.message);
+    });
+```
+
+---
+
+## 4. Why were Promises introduced?
+
+Callbacks become difficult to read when multiple asynchronous operations are nested together. This is called **Callback Hell**.
+
+Promises solve this problem by making asynchronous code easier to read and chain.
+
+---
+
+## 5. What is async/await?
+
+`async/await` is a cleaner way to work with Promises.
+
+It makes asynchronous code look like normal synchronous code.
+
+Example:
+
+```ts
+try {
+    const user = await findUserWithPromise(1);
+    console.log(user);
+} catch (error) {
+    console.log(error);
+}
+```
+
+---
+
+## 6. Difference between Callback, Promise and Async/Await?
+
+### Callback
+
+- Older approach
+- Uses `callback(error, result)`
+- Can lead to Callback Hell
+
+### Promise
+
+- Better than callbacks
+- Uses `.then()` and `.catch()`
+- Easier to chain multiple async operations
+
+### Async/Await
+
+- Built on top of Promises
+- Cleaner and easier to read
+- Uses `try...catch` for error handling
+
+---
+
+## 7. Why do we use `try...catch` with async/await?
+
+When a Promise is rejected, `await` throws an error.
+
+We use `try...catch` to handle that error.
+
+Example:
+
+```ts
+try {
+    const user = await findUserWithPromise(1);
+} catch (error) {
+    console.log(error);
+}
+```
+
+---
+
+## 8. Why do we use `resolve()` and `reject()`?
+
+Inside a Promise:
+
+- `resolve()` is called when the operation is successful.
+- `reject()` is called when the operation fails.
+
+Example:
+
+```ts
+if (!user) {
+    return reject(new Error("User not found"));
+}
+
+resolve(user);
+```
