@@ -118,3 +118,4 @@ process.env is a Node.js object that gives us access to those environment variab
 - We usually use the dotenv package to load values from the .env file into process.env.
 
 .env file -----> dotenv.config() -----> process.env -----> Your Node.js application
+
