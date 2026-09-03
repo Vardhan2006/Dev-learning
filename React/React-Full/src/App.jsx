@@ -1,5 +1,5 @@
-import Button from './Day - 6/Button'
-import Navbar from './Day - 6/Navbar'
+// import Button from './Day - 6/Button'
+// import Navbar from './Day - 6/Navbar'
 
 // import Navbar from "./Day - 6/Navbar";
 import React from "react";

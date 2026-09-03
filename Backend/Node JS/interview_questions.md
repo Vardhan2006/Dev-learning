@@ -70,6 +70,12 @@ const nodeEnv = process.env.NODE_ENV ?? "development";
 
 ---
 
+## What do you mean by environment
+
+Environment means the context in which our application is running, such as development, testing, or production. We use environment variables to provide configuration that can change between these environments without changing our source code.
+
+---
+
 ## 4. Why do we convert `process.env.PORT` using `Number()`?
 
 Because every value inside `process.env` is either a **string** or **undefined**.
@@ -185,13 +191,7 @@ A Promise has three states:
 Example:
 
 ```ts
-findUserWithPromise(1)
-    .then((user) => {
-        console.log(user);
-    })
-    .catch((error) => {
-        console.log(error.message);
-    });
+Visit ===> C:\Codes\Dev-learning\Advance Javascript\Day - 25\promise.js 
 ```
 
 ---

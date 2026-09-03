@@ -13,8 +13,6 @@ function checkInventory() {
         setTimeout(() => {
             console.log("checking the inventory...");
 
-            // to maintain the order we use resolve and reject
-
             resolve();
         }, 5000);
     })

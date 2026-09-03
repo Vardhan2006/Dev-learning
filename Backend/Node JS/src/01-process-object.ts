@@ -14,9 +14,9 @@ const port = 3000 // Bad practice to hard code the env values
 
 const PORT = Number(process.env.PORT ?? 3000)
 
-// process.argv ia a built in property in node js that returrns an array containing the comand line arguments passed when launching the node js process
+// process.argv ia a built in property in node js that returns an array containing the command line arguments passed when launching the node js process
 
-// process.argv[2] is specifically the first custom rgument you pass to your script because the first two in the array are always reserved by node js
+// process.argv[2] is specifically the first custom argument you pass to your script because the first two in the array are always reserved by node js
 
 /*
 process.argv ->

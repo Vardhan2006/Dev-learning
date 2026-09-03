@@ -1,6 +1,6 @@
-// In system when we say line by line execution only one tasks can be processed like if we have 4 console logs only i will be executed at a time
+// In system when we say line by line execution only one tasks can be processed like if we have 4 console logs only 1 will be executed at a time
 
-// example (For the basic example the became too complex)
+// example (For the basic example it became too complex)
 
 function checkInventory(callback) {
 
