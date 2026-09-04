@@ -43,7 +43,7 @@ function runSyncExample(): FileResult {
     // write content to a file
     fs.writeFileSync(SYNC_FILE_PATH, "created using sync fs", 'utf-8')
 
-    fs.appendFileSync(SYNC_FILE_PATH, "Appended using sync fs", "utf-8")
+    fs.appendFileSync(SYNC_FILE_PATH, "\nAppended using sync fs", "utf-8")
 
     const content = fs.readFileSync(SYNC_FILE_PATH, "utf-8")
 
@@ -56,7 +56,6 @@ function runSyncExample(): FileResult {
         sizeInBytes: stats.size
     }
 }
-
 
 async function main(): Promise<void> {
     try {

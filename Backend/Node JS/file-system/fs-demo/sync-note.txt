@@ -1,1 +1,2 @@
-created using sync fsAppended using sync fs
+created using sync fs
+Appended using sync fs
